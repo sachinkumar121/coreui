@@ -4,6 +4,7 @@ import { defineStore } from 'pinia'
 export const useSidebarStore = defineStore('sidebar', () => {
   const visible = ref(undefined)
   const unfoldable = ref(false)
+  const narrow = ref(false)
 
   const toggleVisible = (value) => {
     visible.value = value !== undefined ? value : !visible.value
@@ -13,5 +14,9 @@ export const useSidebarStore = defineStore('sidebar', () => {
     unfoldable.value = !unfoldable.value
   }
 
-  return { visible, unfoldable, toggleVisible, toggleUnfoldable }
+  const toggleNarrow = () => {
+    narrow.value = !narrow.value
+  }
+
+  return { visible, unfoldable, narrow, toggleVisible, toggleUnfoldable, toggleNarrow }
 })

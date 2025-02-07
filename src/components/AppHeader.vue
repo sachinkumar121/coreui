@@ -24,7 +24,10 @@ onMounted(() => {
 <template>
   <CHeader position="sticky" :class="headerClassNames">
     <CContainer class="border-bottom px-4" fluid>
-      <CHeaderToggler @click="sidebar.toggleVisible()" style="margin-inline-start: -14px">
+      <CHeaderToggler @click="sidebar.toggleVisible()" class="d-block d-lg-none" style="margin-inline-start: -14px">
+        <CIcon icon="cil-menu" size="lg" />
+      </CHeaderToggler>
+      <CHeaderToggler @click="sidebar.toggleNarrow()" class="d-none d-lg-block" style="margin-inline-start: -14px">
         <CIcon icon="cil-menu" size="lg" />
       </CHeaderToggler>
       <CHeaderNav class="d-none d-md-flex">
