@@ -5,15 +5,18 @@ import { logo } from '@/assets/brand/logo'
 import { sygnet } from '@/assets/brand/sygnet'
 import { AppSidebarNav } from '@/components/AppSidebarNav.js'
 import { useSidebarStore } from '@/stores/sidebar.js'
+import { useThemeStore } from '@/stores/theme.js'
 
 const sidebar = useSidebarStore()
+const currentTheme = useThemeStore()
 </script>
 
 <template>
   <CSidebar
     class="border-end"
-    colorScheme="dark"
+    :colorScheme="currentTheme.theme"
     position="fixed"
+    :narrow="sidebar.narrow"
     :unfoldable="sidebar.unfoldable"
     :visible="sidebar.visible"
     @visible-change="(value) => sidebar.toggleVisible(value)"
@@ -25,7 +28,7 @@ const sidebar = useSidebarStore()
           <CIcon custom-class-name="sidebar-brand-narrow" :icon="sygnet" :height="32" />
         </CSidebarBrand>
       </RouterLink>
-      <CCloseButton class="d-lg-none" dark @click="sidebar.toggleVisible()" />
+      <CCloseButton class="d-lg-none" :[currentTheme.theme]="true" @click="sidebar.toggleVisible()" />
     </CSidebarHeader>
     <AppSidebarNav />
     <CSidebarFooter class="border-top d-none d-lg-flex">
