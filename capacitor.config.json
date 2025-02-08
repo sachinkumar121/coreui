@@ -1,0 +1,23 @@
+{
+  "appId": "com.silverskysoft.skysalon",
+  "appName": "Sky Salon Scheduler",
+  "webDir": "dist",
+  "server":{
+    "iosScheme": "ionic"
+  },
+  "android": {
+    "path": "capacitor_projects\\android",
+    "allowMixedContent": true
+
+  },
+  "ios": {
+    "path": "capacitor_projects/ios"
+  },
+  "plugins": {
+    "LiveUpdate": {
+      "appId": "com.silverskysoft.skysalon",
+      "defaultChannel": "test",
+      "location": "us"
+    }
+  }
+}

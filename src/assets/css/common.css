@@ -1,0 +1,18 @@
+.controls-div {
+    float: left;
+    width: 100%;
+    border: 1px solid #d8dbe0;
+    padding: 15px 4px;
+    margin: 0 0 1rem 0!important;
+    padding-top: 20px;
+    position: relative;
+}
+.settings-text {
+    position: absolute;
+    background: #fff;
+    padding: 3px 6px;
+    top: -15px;
+    left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}

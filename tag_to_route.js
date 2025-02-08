@@ -1,0 +1,21 @@
+export default {
+    "business_profile":"/business",
+    "my_profile":"/profile",
+    "tax_setup":"/settings/tax_setup",
+    "set_business_hours":"/settings/set_business_hours",
+    "___online_bookings":"/settings/online_commerce_settings",
+    "web_settings":"/settings/online_web_settings",
+    "manage_document_templates": "/paperwork/manage_document_templates",
+    "manage_paperwork_requirements": "/paperwork/manage_paperwork_requirements",
+    "business_messaging": "/settings/business_messaging",
+    "custom_message_templates_sms": "/settings/custom_templates_sms",
+    "booking_settings": "/settings/booking_settings",
+    "booking_reminder_settings": "/settings/booking_reminder_settings",
+    "multi_location": "/multi_location",
+    "bonus_settings":"/settings/bonus_settings",
+     "loyalty_program":"/settings/loyalty",
+    "wait_list_settings":"/settings/wait_list_settings",
+    "inventory_settings":"/settings/inventory_settings",
+    "esp_config":"/settings/esp_config",
+    "receipt_printing_settings": "/settings/receipt_print_settings"
+}

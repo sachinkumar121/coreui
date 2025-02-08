@@ -1,0 +1,57 @@
+PODS:
+  - Alamofire (5.9.1)
+  - Capacitor (6.2.0):
+    - CapacitorCordova
+  - CapacitorApp (6.0.2):
+    - Capacitor
+  - CapacitorCordova (6.2.0)
+  - CapacitorDialog (6.0.2):
+    - Capacitor
+  - CapawesomeCapacitorBackgroundTask (6.0.0):
+    - Capacitor
+  - CapawesomeCapacitorLiveUpdate (6.7.2):
+    - Alamofire (~> 5.9.0)
+    - Capacitor
+    - SSZipArchive (~> 2.2)
+  - SSZipArchive (2.4.3)
+
+DEPENDENCIES:
+  - "Capacitor (from `../../../node_modules/@capacitor/ios`)"
+  - "CapacitorApp (from `../../../node_modules/@capacitor/app`)"
+  - "CapacitorCordova (from `../../../node_modules/@capacitor/ios`)"
+  - "CapacitorDialog (from `../../../node_modules/@capacitor/dialog`)"
+  - "CapawesomeCapacitorBackgroundTask (from `../../../node_modules/@capawesome/capacitor-background-task`)"
+  - "CapawesomeCapacitorLiveUpdate (from `../../../node_modules/@capawesome/capacitor-live-update`)"
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SSZipArchive
+
+EXTERNAL SOURCES:
+  Capacitor:
+    :path: "../../../node_modules/@capacitor/ios"
+  CapacitorApp:
+    :path: "../../../node_modules/@capacitor/app"
+  CapacitorCordova:
+    :path: "../../../node_modules/@capacitor/ios"
+  CapacitorDialog:
+    :path: "../../../node_modules/@capacitor/dialog"
+  CapawesomeCapacitorBackgroundTask:
+    :path: "../../../node_modules/@capawesome/capacitor-background-task"
+  CapawesomeCapacitorLiveUpdate:
+    :path: "../../../node_modules/@capawesome/capacitor-live-update"
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  Capacitor: 05d35014f4425b0740fc8776481f6a369ad071bf
+  CapacitorApp: e1e6b7d05e444d593ca16fd6d76f2b7c48b5aea7
+  CapacitorCordova: b33e7f4aa4ed105dd43283acdd940964374a87d9
+  CapacitorDialog: 25878ac91f5ffaca62ce78884b6e1473e75596e1
+  CapawesomeCapacitorBackgroundTask: 837a0fe4cabcee6646c224acdc0274fcfa58edc4
+  CapawesomeCapacitorLiveUpdate: 03369336ed53a1a7ef144cd076bd6bdb6900d4fd
+  SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
+
+PODFILE CHECKSUM: 8b8c361a09d70e4ad023d20c2bb623edefe72fc1
+
+COCOAPODS: 1.16.2

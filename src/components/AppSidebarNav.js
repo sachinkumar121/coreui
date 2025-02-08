@@ -4,6 +4,8 @@ import { RouterLink, useRoute } from 'vue-router'
 import { cilExternalLink } from '@coreui/icons'
 import { CBadge, CSidebarNav, CNavItem, CNavGroup, CNavTitle } from '@coreui/vue'
 import nav from '@/_nav.js'
+import { useStore } from 'vuex'
+import { Icon } from '@/common/Icon';
 
 import simplebar from 'simplebar-vue'
 import 'simplebar-vue/dist/simplebar.min.css'
@@ -49,6 +51,7 @@ const AppSidebarNav = defineComponent({
   },
   setup() {
     const route = useRoute()
+    const store = useStore()
     const firstRender = ref(true)
 
     onMounted(() => {
@@ -138,10 +141,11 @@ const AppSidebarNav = defineComponent({
                   {
                     default: () => [
                       item.icon
-                        ? h(resolveComponent('CIcon'), {
-                            customClassName: 'nav-icon',
-                            name: item.icon,
-                          })
+                        ? h(Icon, {
+                          class: 'nav-icon',
+                          height: 24,
+                          icon: item.icon,
+                        })
                         : h('span', { class: 'nav-icon' }, h('span', { class: 'nav-icon-bullet' })),
                       item.name,
                       item.badge &&
@@ -179,7 +183,7 @@ const AppSidebarNav = defineComponent({
           as: simplebar,
         },
         {
-          default: () => nav.map((item) => renderItem(item)),
+          default: () => store.state.sb_nav_items[0]._children.map((item) => renderItem(item)),
         },
       )
   },

@@ -1,51 +1,65 @@
 <template>
-  <div class="bwrapper min-vh-100 d-flex flex-row align-items-center">
-    <CContainer>
+  <div class="d-flex align-items-center min-vh-100">
+    <CContainer fluid>
       <CRow class="justify-content-center">
-        <CCol :md="9" :lg="7" :xl="6">
-          <CCard class="mx-4">
+        <CCol md="6">
+          <CCard class="mx-4 mb-0">
             <CCardBody class="p-4">
               <CForm>
                 <h1>Register</h1>
-                <p class="text-body-secondary">Create your account</p>
-                <CInputGroup class="mb-3">
-                  <CInputGroupText>
-                    <CIcon icon="cil-user" />
-                  </CInputGroupText>
-                  <CFormInput placeholder="Username" autocomplete="username" />
-                </CInputGroup>
-                <CInputGroup class="mb-3">
-                  <CInputGroupText>@</CInputGroupText>
-                  <CFormInput placeholder="Email" autocomplete="email" />
-                </CInputGroup>
-                <CInputGroup class="mb-3">
-                  <CInputGroupText>
-                    <CIcon icon="cil-lock-locked" />
-                  </CInputGroupText>
-                  <CFormInput
-                    type="password"
-                    placeholder="Password"
-                    autocomplete="new-password"
-                  />
-                </CInputGroup>
-                <CInputGroup class="mb-4">
-                  <CInputGroupText>
-                    <CIcon icon="cil-lock-locked" />
-                  </CInputGroupText>
-                  <CFormInput
-                    type="password"
-                    placeholder="Repeat password"
-                    autocomplete="new-password"
-                  />
-                </CInputGroup>
-                <div class="d-grid">
-                  <CButton color="success">Create Account</CButton>
-                </div>
+                <p class="text-muted">Create your account</p>
+                <CFormInput
+                  placeholder="Username"
+                  autocomplete="username"
+                >
+                  <template #prepend-content><CIcon name="cil-user"/></template>
+                </CFormInput>
+                <CFormInput
+                  placeholder="Email"
+                  autocomplete="email"
+                  prepend="@"
+                />
+                <CFormInput
+                  placeholder="Password"
+                  type="password"
+                  autocomplete="new-password"
+                >
+                  <template #prepend-content><CIcon name="cil-lock-locked"/></template>
+                </CFormInput>
+                <CFormInput
+                  placeholder="Repeat password"
+                  type="password"
+                  autocomplete="new-password"
+                  class="mb-4"
+                >
+                  <template #prepend-content><CIcon name="cil-lock-locked"/></template>
+                </CFormInput>
+                <CButton color="success" block>Create Account</CButton>
               </CForm>
             </CCardBody>
+            <CCardFooter class="p-4">
+              <CRow>
+                <CCol col="6">
+                  <CButton block color="facebook">
+                    Facebook
+                  </CButton>
+                </CCol>
+                <CCol col="6">
+                  <CButton block color="twitter">
+                    Twitter
+                  </CButton>
+                </CCol>
+              </CRow>
+            </CCardFooter>
           </CCard>
         </CCol>
       </CRow>
     </CContainer>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Register'
+}
+</script>

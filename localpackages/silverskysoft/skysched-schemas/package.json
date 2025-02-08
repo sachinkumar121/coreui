@@ -1,0 +1,27 @@
+{
+  "name": "@silverskysoft/skysched-schemas",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "keywords": [],
+  "author": "Sachin Kumar",
+  "license": "ISC",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "clean": "rm -fr dist/*"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}

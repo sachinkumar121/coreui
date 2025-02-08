@@ -1,24 +1,28 @@
 <template>
-  <div class="wrapper min-vh-100 d-flex flex-row align-items-center">
-    <CContainer>
-      <CRow class="justify-content-center">
-        <CCol :md="6">
-          <span class="clearfix">
-            <h1 class="float-start display-3 me-4">500</h1>
-            <h4 class="pt-3">Houston, we have a problem!</h4>
-            <p class="text-body-secondary float-start">
-              The page you are looking for is temporarily unavailable.
-            </p>
-          </span>
-          <CInputGroup class="input-prepend">
-            <CInputGroupText>
-              <CIcon icon="cil-magnifying-glass" />
-            </CInputGroupText>
-            <CFormInput type="text" placeholder="What are you looking for?" />
+  <CContainer class="d-flex align-items-center min-vh-100">
+    <CRow class="w-100 justify-content-center">
+      <CCol md="6">
+        <div class="clearfix">
+          <h1 class="float-left display-3 mr-4">500</h1>
+          <h4 class="pt-3">Houston, we have a problem!</h4>
+          <p class="text-muted">The page you are looking for is temporarily unavailable.</p>
+        </div>
+        <CFormInput
+          class="mb-3"
+          placeholder="What are you looking for?"
+        >
+          <template #prepend-content><CIcon name="cil-magnifying-glass"/></template>
+          <template #append>
             <CButton color="info">Search</CButton>
-          </CInputGroup>
-        </CCol>
-      </CRow>
-    </CContainer>
-  </div>
+          </template>
+        </CFormInput>
+      </CCol>
+    </CRow>
+  </CContainer>
 </template>
+
+<script>
+export default {
+  name: 'Page500'
+}
+</script>

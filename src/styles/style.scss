@@ -1,15 +1,34 @@
-// If you want to override variables do it here
+//If you want to override variables do it here
+$enable-deprecation-messages: false;
+
+@import "@coreui/coreui/scss/_functions";
+@import "@coreui/coreui/scss/_variables";
+@import "@coreui/coreui/scss/_mixins";
+@import "@coreui/coreui/scss/coreui";
+// $ignore-warning: true;
+@import "@coreui/coreui/scss/mixins/_alert.scss";
+
+
 @import "variables";
 
+$enable-ltr: true;
+$enable-rtl: true;
+
 // Import styles
-@import "@coreui/coreui/scss/coreui";
-@import "@coreui/chartjs/scss/coreui-chartjs";
+// @import "@coreui/coreui/scss/coreui";
+// @import "@coreui/coreui/scss/coreui-variables";
+// @import "bootstrap/scss/functions";
+// @import "@coreui/coreui/scss/variables";
+// @import "@coreui/coreui/scss/mixins";
 
-// Vendors
-@import "vendors/simplebar";
+// Import Chart.js Tooltips
+// @import "@coreui/chartjs/scss/tooltips";
 
-// Custom styles for this theme
-@import "theme";
+@import "layout";
+@import "example";
 
-// If you want to add custom CSS you can put it here
+// If you want to add something do it here
+@import "dark";
+@import "sidebar";
 @import "custom";
+

@@ -1,0 +1,1 @@
+> This package provides schemas/constants for different resources.
