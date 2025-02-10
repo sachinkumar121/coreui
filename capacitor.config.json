@@ -1,0 +1,39 @@
+{
+    "appId": "com.test.app",
+    "appName": "Core UI Application",
+    "webDir": "dist",
+    "server":{
+      "iosScheme": "ionic"
+    },
+    "android": {
+      "path": "capacitor_projects\\android",
+      "allowMixedContent": true
+    },
+    "ios": {
+      "path": "capacitor_projects/ios"
+    },
+    "plugins": {
+      "LiveUpdate": {
+        "appId": "com.test.app",
+        "defaultChannel": "test",
+        "location": "us"
+      },
+      "SplashScreen": {
+        "launchShowDuration": 5000,
+        "launchAutoHide": true,
+        "launchFadeOutDuration": 5000,
+        "backgroundColor": "#ffffffff",
+        "androidSplashResourceName": "splash",
+        "androidScaleType": "CENTER_CROP",
+        "showSpinner": true,
+        "androidSpinnerStyle": "large",
+        "iosSpinnerStyle": "small",
+        "spinnerColor": "#999999",
+        "splashFullScreen": true,
+        "splashImmersive": true,
+        "layoutName": "launch_screen",
+        "useDialog": true
+      }
+    }
+  }
+  

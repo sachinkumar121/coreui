@@ -31,6 +31,7 @@ onBeforeMount(() => {
 </script>
 
 <template>
+  <div class="app-navbar-notch"></div>
   <router-view />
 </template>
 

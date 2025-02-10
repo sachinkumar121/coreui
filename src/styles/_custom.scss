@@ -1,1 +1,17 @@
 // Here you can add other styles
+.sidebar, .sidebar-backdrop {
+    top: env(safe-area-inset-top);
+}
+.app-navbar-notch {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  height: env(safe-area-inset-top);
+  background-color: #fff;
+}
+.dark-theme .app-navbar-notch
+{
+  background-color: #000;
+}

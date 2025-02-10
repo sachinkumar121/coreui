@@ -36,3 +36,8 @@ const currentTheme = useThemeStore()
     </CSidebarFooter>
   </CSidebar>
 </template>
+<style lang="scss" scoped>
+.sidebar, .sidebar-backdrop {
+  top: env(safe-area-inset-top);
+}
+</style>

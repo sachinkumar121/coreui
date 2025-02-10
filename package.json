@@ -7,10 +7,15 @@
   "type": "module",
   "private": "true",
   "scripts": {
-    "dev": "vite --force",
+    "dev": "vite --host",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint \"src/**/*.{js,vue}\"",
-    "preview": "vite preview"
+    "serve": "vite preview",
+    "ios:dev": "npx cap run ios -l --external --port='3000'",
+    "ionic:build": "npm run build",
+    "ionic:serve": "npm run dev",
+    "appbuildsync": "npm run build --buildforlegacybrowsers && npx cap sync"
   },
   "dependencies": {
     "@coreui/chartjs": "^4.0.0",
