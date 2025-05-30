@@ -12,12 +12,15 @@
     "preview": "vite preview",
     "lint": "eslint \"src/**/*.{js,vue}\"",
     "serve": "vite preview",
-    "ios:dev": "npx cap run ios -l --external --port='3000'",
+    "ios:dev": "npx cap run ios -l --port='3000'",
     "ionic:build": "npm run build",
     "ionic:serve": "npm run dev",
     "appbuildsync": "npm run build --buildforlegacybrowsers && npx cap sync"
   },
   "dependencies": {
+    "@capacitor/android": "^7.0.1",
+    "@capacitor/core": "^7.0.1",
+    "@capacitor/ios": "^7.0.1",
     "@coreui/chartjs": "^4.0.0",
     "@coreui/coreui": "^5.2.0",
     "@coreui/icons": "^3.0.1",
@@ -33,6 +36,7 @@
     "vue-router": "^4.4.5"
   },
   "devDependencies": {
+    "@capacitor/cli": "^7.0.1",
     "@vitejs/plugin-vue": "^5.2.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^8.57.0",
